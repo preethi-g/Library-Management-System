@@ -1,9 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
@@ -27,10 +21,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.Part;
 
-/**
- *
- * @author si179
- */
+
 @WebServlet(urlPatterns = {"/NewServlet"})
 @MultipartConfig
 public class NewServlet extends HttpServlet {
@@ -54,7 +45,6 @@ public class NewServlet extends HttpServlet {
         String fileName = Paths.get(filePart.getSubmittedFileName()).getFileName().toString(); // MSIE fix.
         InputStream fileContent = filePart.getInputStream();
         InputStreamReader isr = new InputStreamReader(fileContent);
-       // out.println(fileName);
         
          try {
             br = new BufferedReader(isr);
@@ -66,30 +56,7 @@ public class NewServlet extends HttpServlet {
          out.println("<html><body><center><p size:50em>uploaded</p></center><body></html>");
         }
     }
-      /*  out.println("<p>UPLOADING</p>");
-        Write obj1 = new Write(url,userName,password,br);
-        Write obj2 = new Write(url,userName,password,br);
-        Write obj3 = new Write(url,userName,password,br);
-        Write obj4 = new Write(url,userName,password,br);
-     //  Write obj5 = new Write(url,userName,password);
-       
-        System.out.println(System.currentTimeMillis() - startTime);
-
-       obj1.start();
-        obj2.start();
-        obj3.start();
-        obj4.run();
-      //  obj5.run();
-
-        obj1.join();
-        obj2.join();
-       obj3.join();
-        obj4.join();
-
-       System.out.println(System.currentTimeMillis() - startTime);
-        
-        }
-    }
+      
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /**
