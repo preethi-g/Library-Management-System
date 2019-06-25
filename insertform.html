@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .c1{
+                padding-top: 20%;
+            }
+            .c2{
+                padding-bottom:25%;
+                   
+            }
+            body{
+                background-color: bisque;
+            }
+            input[type="file"]{
+            border: none;
+            background:transparent;
+            outline: none;
+            height:35px;
+            color: black ;
+            font-family: sans-serif;
+            font-size: 20px;}
+             input[type="submit"]{
+            background:grey;
+            outline: none;
+            height:35px;
+            color: black ;
+            font-family: sans-serif;
+            font-size: 20px;}
+          
+        </style>
+    </head>
+    <body>
+    <center>
+        <form action="NewServlet" method="post" enctype="multipart/form-data" target="_self">
+            <div class="c1">
+                <input type="file" name="file" size="500"><br><br>
+            </div>
+            <div class="c2">
+                <input type="submit" size="500" ><br><br>
+                <a href="index.html">back</a>
+            </div>
+        </form>
+        
+        
+    </center>
+    </body>
+</html>
