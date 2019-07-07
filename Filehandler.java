@@ -107,7 +107,6 @@ public class Filehandler {
         w3.start();
         w4.run();
             w1.join();
-            System.out.print("hI I HVAE CROSSSED w1 join");
             w2.join();
             w3.join();
             w4.join();
